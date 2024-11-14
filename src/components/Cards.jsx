@@ -21,7 +21,11 @@ const Cards = () => {
       pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77xypTvXF_bFWVvt49P4cbJ0FsAeZJ1GgCA&s.jpg"
     }
   ];
-
+  const boxStyle = {
+    background: 'linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%)',
+    boxShadow: '0px 20px 100px -10px rgba(66, 71, 91, .1)',
+    borderRadius: '10px',
+  };
   return (
 
 <div>
@@ -32,7 +36,7 @@ const Cards = () => {
 
     <div className="flex md:flex-row flex-col md:ml-[60px] md:mt-[50px] md:justify-between">
       {data.map((item, index) => (
-        <div key={index} className=" hover:bg-[black] hover:opacity-[40%] relative h-[400px] w-[350px] hover:rounded-[10px]">
+        <div key={index} style={boxStyle} className="  m-[10px] h-[400px] md:w-[350px] w-[90%] hover:rounded-[10px]">
             <div className="text-[#00cec8] text-[50px] w-[50px] m-[30px]"><CgQuote /></div>
           <div className="flex flex-col m-[30px]">
             <div className="text-[#808080] font-bold text-[20px]">{item.text}</div>

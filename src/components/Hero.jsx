@@ -7,19 +7,17 @@ const Hero=()=>{
         color: 'transparent',
         fontWeight: 'bold',
       };
-      const boxbg= {
-        background: 'linear-gradient(90deg, #def9fa 0%, #bef3f5 17%, #9dedf0 42%, #7de7eb 55%, #5ce1e6 71%, #33bbcf 100%)',
-        WebkitBackgroundClip: 'text', 
-        color: 'transparent',
-        
-        
+      const boxStyle = {
+        background: 'linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%)',
+        boxShadow: '0px 20px 100px -10px rgba(66, 71, 91, .1)',
+        borderRadius: '10px',
       };
     return(
         <div className="flex md:flex-row md:p-[30px] md:mt-[50px] sm:mt-[20px] sm:p-8 flex-col">
 
             <div className="flex flex-col gap-[10px] md:gap-[10px] md:ml-[50px] md:mt-[50px] mt-[100px] sm:flex-1 sm:flex-1">
 
-           <div className="md:h-[40px] h-[60px] w-full md:w-[600px] rounded-[10px] flex items-center justify-center" style={boxbg}>
+           <div  style={boxStyle} className="md:h-[40px] h-[60px] w-full md:w-[600px] rounded-[10px] flex items-center justify-center" >
             <img src="https://hoooobank.netlify.app/assets/Discount.61d9dc08.svg" className="h-[50px] w-[50px]"/>{" "}
             <p className="text-[#808080] text-[20px] sm:text-[25px]">
                 <span className="text-white">20%</span>{" "}

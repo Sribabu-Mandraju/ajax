@@ -53,8 +53,8 @@ const Footer=()=>{
 
 <div className="md:m-[50px] m-[30px] h-[2px] bg-white"></div>
 
-<div className="flex md:justify-around items-center justify-center flex-col ">
-  <div className="text-white font-bold text-[20px] sm:text-center">2022 HooBank. All Rights Reserved.</div>
+<div className="flex  items-center justify-center flex-col ">
+  <div className="text-white font-bold text-[20px] text-center">2022 HooBank. All Rights Reserved.</div>
 
 
   <div className="flex flex-row  text-white mt-[20px] text-[20px] gap-[10px]">
